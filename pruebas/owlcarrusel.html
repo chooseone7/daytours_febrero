@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- head -->
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Basic usage demo">
+    <meta name="author" content="David Deutsch">
+    <title>
+      Basic Demo | Owl Carousel | 2.3.4
+    </title>
+
+    <!-- Stylesheets -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic' rel='stylesheet' type='text/css'>
+    
+    
+    <link rel="stylesheet" href="../docs/OwlCarousel2-2.3.4/docs/assets/css/docs.theme.min.css" type='text/css'>
+    <link rel="stylesheet" href="../docs/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.css" type='text/css'>
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="../docs/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.css" type='text/css'>
+    <link rel="stylesheet" href="../docs/OwlCarousel2-2.3.4/docs/assets/css/animate.css" type='text/css'>
+    
+    
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Yeah i know js should not be in header. Its required for demos.-->
+
+    <!-- javascript -->
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/owl.carousel.js"></script>
+<style>
+    body{
+/*        background: gray;*/
+        text-align: center;
+    }
+    
+    
+/*
+    .item{
+        border: 1px solid !important;    
+        color:#000;
+        display: inline-block !important;
+        background: steelblue !important;
+        padding: 15px !important;
+    }    
+*/
+</style>
+</head>
+<body>
+<section id="demos">
+     <div class="owl-carousel owl-theme">
+        <div class="item"><h4>1</h4></div>
+        <div class="item"><h4>2</h4></div>
+        <div class="item"><h4>3</h4></div>
+        <div class="item"><h4>4</h4></div>
+        <div class="item"><h4>5</h4></div>
+        <div class="item"><h4>6</h4></div>
+        <div class="item"><h4>7</h4></div>
+        <div class="item"><h4>8</h4></div>
+        <div class="item"><h4>9</h4></div>
+        <div class="item"><h4>10</h4></div>
+        <div class="item"><h4>11</h4></div>
+        <div class="item"><h4>12</h4></div>
+    </div>
+</section>    
+   
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                400:{
+                    items:3
+                },
+                8000:{
+                    items:5
+                }
+            }
+        })    
+    </script>
+</body>
+</html>

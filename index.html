@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--lunes-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daytours</title>
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+        
+        
+        <link rel="stylesheet" href="css/main_style.css">
+        <link rel="stylesheet" href="css/b4-megamenu.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet" type="text/css">
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" type="text/css">
+<!--        <link rel="stylesheet" href="css/docs.theme.min.css" type="text/css">-->
+        <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+        <link rel="stylesheet" href="css/owl.theme.default.css" type="text/css">
+        <style>
+            .item, .item h4{
+                background:none !important;
+                color:#000 !important;
+                height: 100% !important;
+            }
+            #demos{}
+            
+            .owl-carousel .owl-item img{
+                width: auto;
+            }
+            .owl-nav{
+                text-align: right;
+            }
+            
+            .owl-next{
+                background: none;
+                cursor: pointer;
+                position: absolute;
+                top: 138px; 
+                right:-28px;
+                width: 10%;              
+                z-index: 1;
+            }
+            
+            .owl-next::before{
+                background-color: #fff;
+                border: 1px solid ;
+                border-radius: 50%;
+                box-shadow: 0 0 5px #ddd;
+                color: #0e1822;
+                content: "\f105";
+                display: inline-block;
+                font-family: FontAwesome;
+                font-size: 34px;
+                font-weight: 700;
+                height: 56px;
+                line-height: 54px;
+                text-align: center;
+                padding: 0 0;
+                width: 56px;                                
+            }
+            
+            .owl-theme .owl-nav [class*='owl-'] {
+                content: "\f105";
+                font-family: FontAwesome;
+                color: #0e1822;
+                background-color: #fff;
+                box-shadow: 0 0 5px #ddd;
+                display: inline-block;
+                border-radius: 50%;
+                
+                text-indent: -1px;                  /*OCULTAR TEXTO */
+                white-space: nowrap;
+                overflow: hidden;
+                
+                width: 56px;
+                line-height: 54px;
+                text-align: center;
+                font-size: 34px;
+                font-weight: 700;
+                height: 56px;
+                padding: 0 0;
+            }
+
+            div.owl-prev{
+                display: none !important;
+            }
+            .owl-theme .owl-nav{
+                
+            }
+        </style>
+</head>
+<body>
+   <div class="wrapper" style="overflow: hidden;">
+        <header>
+             <div class="tab-movil">
+                    <div class="d-flex" style="">
+                         <ul class="nav" role="tablist">
+                             <li class="nav-item">
+                                 <a href="#step-1" id="step1-tab" class ="nav-link active" aria-selected="true" data-toggle="tab" role="tab"></a>
+                             </li>
+                             <li class="nav-item">
+                                 <a href="#step-2" id="step2-tab" class ="nav-link"  aria-selected="false" data-toggle="tab" role="tab"></a>
+                             </li>
+                             <li class="nav-item">
+                                 <a href="#step-3"  id="step3-tab" class ="nav-link" aria-selected="selected" data-toggle="tab" role="tab"></a>
+                             </li>
+                       </ul>
+                    </div>
+                    <div class="tab-content" style="">
+                        <div class="tab-pane fade show active" id="step-1" aria-labelledby="step1-tab" role="tabpanel">
+                              <div class="innerContent">
+                                    <ul class="detours-movil"><!--<i class="em em-anguished"></i>-->
+                                        <li class="#"><a href="#">DESTINATIONS</a><span></span>
+                                              <ul class="submenu-detours-movil">
+                                                    <li><a href= "#">Argentina</a><span></span>
+                                                        <ul class="sub-submenu-detours-movil">
+                                                            <li><a href="#">BUENOS AIRES</a></li>
+                                                            <li><a href="#">BARILOCHE</a></li>
+                                                            <li><a href="#">MENDOZA</a></li>
+                                                            <li><a href="#">VIEW MORE</a></li>
+                                                        </ul>                                               
+                                                    </li>
+                                                      <li><a href="">Colombia</a></li>
+                                                      <li><a href="">Uruguay</a></li>
+                                                      <li><a href="">Bolivia</a></li>
+                                                      <li><a href="">Chile</a></li>
+                                             </ul>
+                                        </li>
+                                        <li class=""><a href="#">TOURS</a></li>
+                                        <li class=""><a href="#">REGIONS</a></li>
+                                        <li class=""><a href="#">TALIOR MADE TOURS</a></li>
+                                        <li class=""><a href="#">TRAVEL INSPIRATION</a></li>
+                                    </ul>
+                                </div>
+                                </div>
+                            <div class="tab-pane fade" id="step-2" aria-labelledby="step2-tab" role="tabpanel">
+
+                                     <div class="innerContent">
+                                        <ul class="detours-movil">
+                                              <li class=""><a href="#">DESTINATIONS</a><span></span></li>
+                                              <li class=""><a href="#">TOURS</a></li>
+                                              <li class=""><a href="#">REGIONS</a></li>
+                                              <li class=""><a href="#">TALIOR MADE TOURS</a></li>
+                                              <li class=""><a href="#">TRAVEL INSPIRATION</a></li>
+                                        </ul>
+                                    </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="step-3" aria-labelledby="step3-tab" role="tabpanel">
+
+
+                                     <div class="innerContent">
+                                          <ul class="detours-movil"><!--<i class="em em-anguished"></i>-->
+                                              <li class=""><a href="#">DESTINATIONS</a></li>
+                                              <li class=""><a href="#">TOURS</a></li>
+                                              <li class=""><a href="#">REGIONS</a></li>
+                                              <li class=""><a href="#">TALIOR MADE TOURS</a></li>
+                                              <li class=""><a href="#">TRAVEL INSPIRATION</a></li>
+                                          </ul>
+                                    </div>
+
+                            </div>       
+                         </div>
+                     </div>
+
+          <div class="container">
+               <div class="row">
+    <!--             navbar navbar-light -->
+                  <div class="top-navbar col-xl-12">
+
+
+                     <div class="row">
+                         <div class="top-navbar-1 col-xl-6 col-lg-6 pb-0 col-md-7 pr-0">
+
+                             <nav class="row justify-content-xl-start justify-content-md-left">
+                                <div class ="logo-rwd" style="">
+                                   <i class="fa fa-bars menu-rwd" aria-hidden="true"></i>
+                                    <img src="./img/logo2.png" alt="">
+                                </div>
+                                <div class="dropdown dropdown-daytours">
+                                    <button type="button" class="btn btn-primary btn-primary-daytours dropdown-toggle" data-toggle="dropdown">
+                                      <span style="color:#fff;">English</span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-daytours1">
+                                      <a class="dropdown-item dropdown-item-daytours" href="#">english</a>
+                                      <a class="dropdown-item dropdown-item-daytours" href="#">frances</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown dropdown-daytours2">
+                                    <button type="button" class="btn btn-primary btn-primary-daytours2 dropdown-toggle " data-toggle="dropdown">
+                                      <span style="color:#fff;">USD ($US$)</span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-daytours2">
+                                      <a class="dropdown-item dropdown-item-daytours" href="#">ars &nbsp;&nbsp;cad</a>
+                                      <a class="dropdown-item dropdown-item-daytours" href="#">aud &nbsp;&nbsp;clp</a>
+                                      <a class="dropdown-item dropdown-item-daytours" href="#">brl &nbsp;&nbsp;eur</a>
+                                      <a class="dropdown-item dropdown-item-daytours" href="#">gbp &nbsp;&nbsp;usd</a>
+                                    </div>
+                                  </div>    
+                                <div class="">
+                                      <ul class="top-menu row">
+                                         <li class="ml-3" class="custom-links"><a>helpsss</a></li>
+                                         <li class="ml-3" class="custom-links"><a>chat widh us</a></li>
+                                     </ul>
+                                 </div>
+                                 <div class="sign-cart">
+                                     <span></span>
+                                     <span class="suitcase"></span>
+                                 </div>
+                             </nav>
+                         </div>
+                         <div class="top-navbar-2 col-xl-6 col-lg-6 col-md-5 registro pl-0 pr-0">
+                             <div class="row">
+                                <div class="col-xl-12 col-md-11"><!--  offset-xl-7-->
+                                      <ul class="signing row justify-content-md-end">
+                                         <li class="ml-3"><a>SIGN IN <span>or</span></a></li>
+                                         <li class="ml-3"><a>JOIN</a></li>
+                                         <li class="ml-3 mr-3"><a>MY TOURS</a></li>
+                                         <li class="ml-3 mr-3" style="display:inline-block;width:36px;background: #008fff;margin-top:-13px;height:38px;text-align: center;"><a>0</a></li>
+                                     </ul>
+                                 </div>
+                            </div>
+                         </div>                      
+                     </div>
+                  </div>
+              </div>
+          </div>
+
+         </header>
+        <div id="intro" style="position: relative">
+                  <div class="cortina-logo d-xl-none" style="position: absolute; background-color: blue;">
+                  </div>
+                    <div class="container">
+                      <div class="row-logo-megamenu">      
+                          <div class="col-xl-12 logo-daytours">
+                            <div class="row">
+                             <DIV class="logo col-xl-3"><!-- logo -->
+                               <img src="img/logo (1).png" alt="" class="logo-daytours">
+                            </DIV>
+                             <!--mega menu-->
+                             <div class="logo col-xl-7 offset-xl-2 pr-0">
+                             <nav class="eee navbar navbar-daytours navbar-expand-lg navbar-light bg-light">
+    <!--                          <a class="navbar-brand" href="#">Navbar</a>-->
+                              <button class="navbar-toggler" type="button" 
+                               7data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!--                            <span class="navbar-toggler-icon"></span>-->
+                              </button>
+
+                              <div class="collapse navbar-collapse navbar-collapse-daytours" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto mx-auto">
+                                  <li class="nav-item dropdown">
+                                        <a class="nav-link nav-link-daytours dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      DESTINATIONS
+                                    </a>
+                                    <div class="dropdown-menu mega-menu mega-menu-daytours" aria-labelledby="navbarDropdown">
+
+                                  <div class="row">
+                                          <div class="col-xl-12">
+                                           <div class="row pb-4">
+                                            <div class="col">
+                                             <p><strong class="sub-menu-heading sub-menu-heading-daytours">ARGENTINA </strong></p> 
+                                             <p><a href="#">Buenos Aires</a></p>
+                                             <p><a href="#">Bariloche</a></p>
+                                             <p><a href="#">El Calafate</a></p>
+                                             <p><a href="#">Mendoza</a></p>
+                                             <p><a class="view-more" href="#">VIEW MORE</a></p>
+                                            </div>
+                                            <div class="col">
+                                              <p><strong class="sub-menu-heading sub-menu-heading-  daytours">BRAZIL</strong></p> 
+                                              <p><a href="#">Rio de Janeiro </a></p>
+                                              <p><a href="#">Sao Paolo</a></p>
+                                              <p><a href="#">Bahía </a></p>
+                                              <p><a href="#">Fortaleza </a></p>
+                                            </div>
+                                            <div class="col">
+                                             <p><strong class="sub-menu-heading sub-menu-heading-daytours">COLOMBIA</strong></p> 
+                                             <p><a href="#">Cartagena </a></p>
+                                             <p><a href="#">Medillin</a></p>
+                                             <p><a href="#">Bogota </a></p>
+                                             <p><a href="#" >San Andres </a></p>
+                                             <p><a class="view-more" href="#" class="view-more">VIEW MORE</a></p>
+                                         </div>  
+                                            <div class="col">
+                                             <p><strong class="sub-menu-heading sub-menu-heading-daytours">PERU</strong></p> 
+                                             <p><a href="#">Cartagena </a></p>
+                                             <p><a href="#">Medillin</a></p>
+                                             <p><a href="#">Bogota </a></p>
+                                             <p><a href="#">San Andres </a></p>
+                                             <p><a class="view-more" href="#" class="view-more">VIEW MORE</a></p>
+                                         </div>  
+                                           </div>
+                                           <div class="row">
+                                             <div class="col">
+                                                 <p><strong class="sub-menu-heading sub-menu-heading-daytours">BOLIVIA </strong></p> 
+                                                 <p><a href="#">La Paz</a></p>
+                                                 <p><a href="#">Puno</a></p>
+                                                 <p><a href="#">Copacabana</a></p>
+                                                 <p><a href="#">Uyuni</a></p>
+                                                 <p><a href="#" class="view-more">VIEW MORE</a></p>
+                                             </div>
+                                             <div class="col">
+                                                 <p><strong class="sub-menu-heading sub-menu-heading-daytours">CHILE</strong></p> 
+                                                 <p><a href="#">Santiago </a></p>
+                                                 <p><a href="#">Viña del Mar</a></p>
+                                                 <p><a href="#">La Serena</a></p>
+                                                 <p><a href="#">Valdivia </a></p>
+                                             </div>
+                                             <div class="col">
+                                                 <p><strong class="sub-menu-heading sub-menu-heading-daytours">URUGUAY</strong></p> 
+                                                 <p><a href="#">Colonia </a></p>
+                                                 <p><a href="#">Puntadel Este</a></p>
+                                                 <p><a href="#">Montevideo</a></p>
+                                                 <p><a href="#">Carmelo </a></p>
+
+                                             </div>  
+                                             <div class="col">
+                                                 <p><strong class="sub-menu-heading sub-menu-heading-daytours">PARAGUAY</strong></p> 
+                                                 <p><a href="#">Asunción </a></p>
+                                                 <p><a href="#">Ciudad del Este</a></p>
+                                                 <p><a href="#">Encarnación</a></p>
+                                                 <p><a href="#">San Lorenza </a></p>
+                                            </div>
+                                          </div>
+                                        </div> 
+<!--
+                                        <div class="col-xl-4">
+                                            <div class="">
+                                                <img src="img/tango.png" alt="">
+                                            </div>
+                                         </div>
+-->
+                                        </div>
+                                  <a class="dropdown-item" href="#">Action</a>
+                                    </div>
+                                  </li>
+                                  <li class="nav-item active ">
+                                    <a class="nav-link nav-link-daytours" href="#">TOURS <span class="sr-only">(current)</span></a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link nav-link-daytours" href="#">REGIONS</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link nav-link-daytours" href="#">TAILOR MADE</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link nav-link-daytours" href="#">TRAVEL INSPIRATION</a>
+                                  </li>
+                                  <li class="searcher-magnifying" style="">
+                                      <button class="btn btn-daytours my-2 my-sm-0" type="submit"></button>
+                                  </li>
+
+                                </ul>
+
+                              </div>
+
+                            </nav>
+                        </div>                           
+                            </div>
+                          </div>  
+                      </div>                  
+                      <div class="searcher-content">
+                         <h1 class="bigtitle">From the Caribbean to the Patagonia</h1>
+                         <div class="row row-destination-form">
+
+                                    <form class=" destination-form pl-md-0 pr-md-0 offset-xl-1" style="position: relative; z-index: 99;">                       
+    <!--                                 col-xl-12 -->
+                                      <div class="row no-gutters">
+                                          <div class="col-xl-4 col-md-4 col-sm-12 col-dropdown-destinationform earch-categorylist search-categorylist1">
+                                              <div class="dropdown dropdown-daytours4 mb-xl-5 text-right">
+                                                     <button type="button" class="btn btn-primary btn-primary-daytours4 dropdown-toggle " data-toggle="dropdown">
+                                                      <span> All destinations</span>
+                                                    </button>
+                                                    <div class="dropdown-menu dropdown-menu-daytour4">
+                                                      <a class="dropdown-item dropdown-item-daytours4" href="#">All destinations</a>
+                                                      <a class="dropdown-item dropdown-item-daytours4" href="#">Argentina</a>    
+                                                      <a class="dropdown-item dropdown-item-daytours4" href="#">Bolivia</a>  
+                                                      <a class="dropdown-item dropdown-item-daytours4" href="#">Brazil</a>  
+                                                      <a class="dropdown-item dropdown-item-daytours4" href="#">Chile</a>   
+                                                      <a class="dropdown-item dropdown-item-daytours4" href="#">Colombia</a>  
+                                                      <a class="dropdown-item dropdown-item-daytours4" href="#">Paraguay</a> 
+                                                      <a class="dropdown-item dropdown-item-daytours4" href="#">Peru</a> 
+                                                    </div>
+                                                 </div>
+                                          </div>                                
+                                          <div class="col-xl-3 col-md-5 col-sm-12 col-destinationform-text">
+                                              <input type="text" value="" placeholder="Type an experience"/>           
+                                          </div>
+                                            <div class="col-xl-2  col-md-2 col-sm-12 col-destinationform-button">
+                                                <button class="btn btn-warning btn-daytours4you warning-daytours4you">find experience</button>
+                                            </div>
+                                     </div>
+                                  </form>
+    <!--                            </div>-->
+                        </div>
+                    </div>
+                      <div class="row-whydetours" >
+                        <div class="col-xl-12 whydetours" style="position:relative;z-index:1;">
+                            <div class="row d-flex justify-content-around" style="border-top: 1px solid rgba(255,255,255,.35);padding-top: 12px;">
+                                 <div class="why-detours col-xl-3 col-md-6 text-md-left">
+                                      <a href=""><img src="img/why-detours-imgs/book-safe-and-easy.png" alt=""></a>
+                                      <span>Book <b>Safe & Easy</b></span>
+                                 </div>
+                                 <div class="why-detours col-xl-3 col-md-6 pb-2 text-md-left">
+                                  <a href=""><img src="img/why-detours-imgs/various-payment-method.png" alt=""></a>
+                                  <span> Various <b>Payment Methods</b></span>
+                                </div>
+                                 <div class="why-detours col-xl-3 col-md-6 text-md-left">
+                                  <a href=""><img src="img/why-detours-imgs/local-customer-service.png" alt=""></a>
+                                  <span>Local <b>Customer Service</b></span>
+                                </div>
+                                 <div class="why-detours col-xl-3 col-md-6 pb-2 text-md-left">
+                                  <a href=""> <img src="img/why-detours-imgs/curated-experiences.png" alt=""></a>
+                                  <span> Curated Experiencies</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+    <!--            <div class="full-bg-img"></div>-->
+              </div>    
+              </div> 
+        <main class="main-content"></main>
+        <main class="join-the-adventure">   
+                <div class="container container-daytours-join-adventure pr-0">      
+                   <div class="row">
+                     <div class="col-xl-12 col-sm-12">
+                         <h5>Join The Adventure</h5>    
+                     </div>  
+                       <div class="col-lg-4 col-lg-3 col-md-6 pl-xl-0">
+                            <div class="row">
+                                <div class="col-xl-12 pb-xl-3  pb-lg-2 pb-md-2 pb-sm-1 col-sm-12 join-the-adventure-caribean">
+                                  <img src="img/join-adventure/caribbean.jpg" alt="">
+                                </div>
+                                <div class="col-xl-12 pb-md-1 col-sm-12 join-the-adventure-andes">
+                                 <img src="img/join-adventure/andes.jpg" alt="">
+                                </div>
+                            </div>
+                      </div>
+
+                     <div class="col-lg-4 col-lg-3 col-md-6 pl-xl-0 pr-xl-0 join-the-adventure-patagonia">
+                        <div class="pb-md-1">
+                             <img src="img/join-adventure/patagonia.jpg" alt="">
+                         </div> 
+                     </div>
+                     <div class="col-lg-4 col-lg-3 col-md-12 pr-xl-0">
+                        <div class="row justify-content-md-start jointheadventure-3col">
+                            <div class="col-xl-12 col-lg-12 col-md-6 pb-xl-3 pb-lg-2 pb-md-2 pb-sm-1 join-the-adventure-desert">
+                                 <img src="img/join-adventure/desert.png" alt="">
+                             </div>
+                             <div class="col-xl-12 col-lg-12 col-md-6 join-the-adventure-jungle">
+                                 <img src="img/join-adventure/jungle.jpg" alt="">
+                            </div>
+                        </div>
+                     </div> 
+                 </div>
+
+                </div>
+         </main> 
+        <main class="explore-the-adventure" style="margin-left: 24px;">         
+                <div class="container container-daytours-explore-the-adventure pr-0">      
+                   <div class="text-left row pb-4 pt-4">
+                     <div class="col-xl-10 pl-0">
+                          <h4 class="">Explore the cities</h4>  
+                     </div>
+                     <div class="col-xl-2" style="font-size:13px; font-weight: bolder;">
+                         <span><a href="" style="color:#1d2e3c !important;padding-right:4px">ALL SIGHTSEEING TOURS</a><img src="./img/social-media/arrow-right.png" alt=""></span>  
+                     </div>
+                   </div>   
+                   <div id="demos">
+                        <div class="row row-explore-aventure">
+                            <div class="owl-carousel owl-theme">
+                             <div class="item col-xl-12 col-md-12 col-sm-12">
+                                <div class="row explore-cities-1">   
+                                    <img src="img/explore-cities/classic-buenos-aires.jpg" alt="">        
+
+                                    <div class="text-left w-100">
+                                         <h6 class="text-left row ml-3 pt-3 pb-2">
+                                         Classic Buenos Aires Bike Tour 
+                                         </h6>
+                                         <p class="reviews"></p>
+                                         <div class="container-price-button">
+                                            <div class="price-datyours ml-3">
+                                             <span>from </span>
+                                             <p>us$39</p>
+                                            </div>    
+                                            <button class="btn btn-primary float-right">BOOK NOW</button>                             
+                                        </div>
+
+                                      </div>
+                                </div>
+                            </div>
+                             <div class="item col-xl-12 col-md-12 col-sm-12">
+                                 <div class="row explore-cities-2"> 
+                                 <img src="img/explore-cities/football-montevideo.jpg" alt="">
+                                  <div class="text-left w-100">
+                                     <h6 class="text-left row ml-3 pt-3 pb-2">Footbal Tour in Montevideo</h6>
+                                     <p class="reviews"></p>
+                                       <div class="container-price-button">
+                                            <div class="price-datyours ml-3">
+                                             <span>from </span>
+                                             <p>us$39</p>
+                                            </div>                                 
+                                            <button class="btn btn-primary float-right">BOOK NOW</button>
+                                      </div>
+
+
+                                 </div>
+                                </div>
+                            </div>
+                             <div class="item col-xl-12 col-md-12 col-sm-12">
+                                  <div class="row explore-cities-3"> 
+                                        <img src="img/explore-cities/riodejaneiro.jpg" alt="">
+                                        <div class="text-left w-100">
+                                             <h6 class="text-left row ml-3 pt-3 pb-2">
+                                         Pub Crawl in Lapa, Río de Janeiro</h6>
+                                             <p class="reviews"></p>
+                                              <div class="container-price-button">
+                                                <div class="price-datyours ml-3">
+                                                     <span>from </span>
+                                                     <p>us$39</p>
+                                                </div>                                 
+                                                 <button class="btn btn-primary float-right">BOOK NOW</button>
+
+                                            </div>
+                                            </div>
+                                    </div>
+    </div> 
+                             <div class="item col-xl-12 col-md-12 col-sm-12">
+                                  <div class="row explore-cities-4"> 
+                                        <img src="img/explore-cities/medellyn_.jpg" alt="">
+                                        <div class="text-left w-100">
+                                             <h6 class="text-left row ml-3 pt-3 pb-2">Classic Buenos Aires Bike</h6>
+                                             <p class="reviews"></p>
+                                             <div class="container-price-button">   
+                                                 <div class="price-datyours ml-3">
+                                                     <span>from </span>
+                                                     <p>us$39</p>
+                                                </div>                                 
+                                               <button class="btn btn-primary float-right">BOOK NOW</button>
+                                            </div>
+                                            </div>
+
+                                    </div>
+                             <div></div>
+                           </div> 
+                        </div>
+                        </div>
+
+                      </div>
+                    </div>
+         </main>
+        <main class="trending-activities">   
+                <div class="container trending-activities-container">
+                   <div class="text-left pt-4 pb-3"><h5>Trending Activities</h5></div>
+
+                        <div class="row" id="box-search"> 
+    <!--                       col-md-12-->
+                            <div class="thumbnail col-lg-6 text-left p-0 p-lg-1 pt">
+                                <img src="img/trending-activities/carnival.jpg" alt="" class="img-responsive">
+                                <div class="caption ml-4 pl-4">
+                                     <p>ARGENTINA - MENDOZA</p>
+                                    <h3>Grape Harvest Festival 2018</h3>
+                                    <span><a href="#">BOOK NOW <b></b></a></span>
+                                </div>
+                            </div>
+                            <div class="thumbnail col-lg-6 text-left p-0 p-lg-1">
+                                <img src="img/trending-activities/grape-harvest.png" alt="" class="img-responsive">
+                                  <div class="caption ml-1 pl-xl-1 pl-lg-2 pl-md-1">
+                                    <h3 id="carnival_round"> <b>Carnival</b> all year round</h3>
+                                    <p>Let yourself be enveloped by the magic of Rio de Janeiro with the Carnival Experience in the Wonderful City. </p>
+
+                                    <span><a href="#">BOOK NOW <b></b></a></span>
+
+                                </div>
+                            </div>
+                        </div>               
+
+                    </div>
+             </main>
+        <main class="about-daytours mt-5 mb-5">
+                <div class="container about-daytours-container">
+                    <div class="row">
+                            <div class="col-xl-8 offset-xl-2">
+                                <h2 class="mt-4 mb-4">About Daytours4u</h2>            
+                                <p class="mt-5 mb-5">We want to offer you the best of Latin America: Its authenticity and its warm, exciting, surprising and sensual character. Our job is to make you fall in love with this land, just as much as we love it, therefore we try to share with you our favourite places and activities, so that you can explore them and experience them to the fullest through travel encounters that will surely leave an everlasting mark on your heart.</p>
+                                <a href="#"class="btn-discover"><b>Discover</b></a>
+                            </div>                             
+                    </div>
+                </div>
+            </main>
+        <main class="testimonial-subscribe mt-5 mt-5">
+                <div class="container testimonial-subscribe-container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 testimonials text-left">
+                            <h4 class="pb-4 ">Testimonials</h4>
+                            <p class="pb-4" style="font-style: italic;">Testimonials
+                                I was lucky enough to go on the hike up the Pedra Da Gavea in Rio de Janeiro with Daytours4u, and it was one of the most unforgettable experiences of my life. With the help of an amazing guide we climbed up the highest mountain in Rio. I've never felt such a feeling of achievement as I did at the top of the mountain. Couldn't recommend it more.</p>
+                               <div style="position: relative;">
+                                   <span class="reviews" style="display: inline-block;"> </span>
+                                   <span class="ml-2"> <b>Lucy Galvan, Colombia</b></span>
+                               </div>
+
+                        </div>
+                        <div class="col-xl-6 col-lg-6 subscribe-daytours text-center pt-5 pb-3">
+                            <div class="news-letter-daytours">
+                                <h4 class="mt-xl-5 subscribe-daytours-h4">Suscribe Daytours4u</h4>
+                                <p class="mx-auto subscribe-daytours-p">Receive our emails and be the first to know about exclusive offers, promotions, and interesting travel posts.</p>
+                                <form class="news-letter-daytours-form row mb-5 ms-auto justify-content-center"action="">
+
+                                    <div class="col-xl-7 offset-xl-2 col-lg-7 col-md-5 offset-md-1 col-sm-8 pr-0">
+                                    <input type="text" value="" class="ccc" placeholder="Your email..."/>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-2 col-md-2 col-sm-2 pl-0">
+                                    <button></button>
+                                    </div>
+                                </form>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+       </main>
+        <main class="footer-main">
+            <div class="container container-footer mt-5 pt-4 pb-5">
+                <div class="row row-footer-links"> 
+                     <div class="col-xl-3 col-md-12 col-md-3">
+                        <h6 class="travel-inspiration pb-3">Travel Inspiration</h6>
+                        <div class="row travel">
+                            <div class="travel1 col-xl-5 col-md-4 col-sm-6 text-xl-right text-md-left">
+                              <img src="img/footer-imgs/1.jpg"/> 
+                           </div>
+                            <div class="travel2 d-xl-block col-xl-7 col-md-4 col-sm-8 text-left mb-sm-3">
+                                <h6 class="travel">Route of the Seven Lakes in Chile: What to do and where to go</h6>
+                                <p>Feb 20, 2018 <b>Tours Reviews</b></p>
+                           </div>
+                       </div>
+
+                       <div class="row experience">
+                            <div class="travel1 col-xl-5 col-md-4 col-sm-8 text-xl-right text-md-left">
+                              <img src="img/footer-imgs/2.jpg"/> 
+                           </div>
+                            <div class="travel2 col-xl-7 col-md-4 col-sm-8 text-left mb-sm-3">
+                                <h6 class="travel">What travel experiences to live 
+                                in 2018 according to your ...</h6>
+                               <p>Feb 20, 2018b<b>Insider Tipos</b></p>
+                           </div>
+                      </div>
+
+                      <div class="row row-footer-destinations">
+                            <div class="travel1 col-xl-5 col-md-4 col-sm-8 text-xl-right text-md-left">
+                              <img src="img/footer-imgs/3.png"/> 
+                           </div>
+                           <div class="travel2 col-xl-7 col-md-4 col-sm-6 text-left mb-sm-3">
+                                <h6 class="travel">The 5 most romantic activities 
+                                to do in Colombia</h6>
+                               <p>Feb 20, 2018  <b>Things to do</b>
+                                </p>
+                           </div>
+                     </div>                                    
+                     </div>
+                     <div class="col-xl-8 offset-xl-1">
+                        <div class="row footer-links">
+                             <div class="footer-link col-xl-3 col-md-3 text-left">
+                             <h6 class="menuh6 pb-3"><a href="#">Destinations</a></h6>       
+                             <div class="row">                
+                                <div class="col-xl-11">
+                                    <ul class="menuh6-ul-destinations ml-0" id="menuh6-company-id1">
+                                        <li><a href="#">Argentina</a></li>
+                                        <li><a href="#">Brazil</a></li>
+                                        <li><a href="#">Colombia</a></li>
+                                        <li><a href="#">Uruguay</a></li>
+                                        <li><a href="#">Chile</a></li>
+                                        <li><a href="#">Perú</a></li>
+                                        <li><a href="#">Bolivia</a></li>
+                                        <li><a href="#">Paraguay</a></li>
+                                    </ul>
+                                </div>    
+                            </div>
+                         </div>
+                             <div class="footer-link col-xl-3 col-md-3 text-left">
+                            <h6 class="menuh6 pb-3"><a href="">Region</a></h6>  
+                            <div class="row">      
+
+                                <div class="col-xl-11">
+                                    <ul class="menuh6-ul-regions m-0" id="menuh6-company-id2">
+                                        <li><a href="#">Argentina</a></li>
+                                        <li><a href="#">Brazil</a></li>
+                                        <li><a href="#">Colombia</a></li>
+                                        <li><a href="#">Uruguay</a></li>
+                                        <li><a href="#">Chile</a></li>
+                                        <li><a href="#">Perú</a></li>
+                                        <li><a href="#">Bolivia</a></li>
+                                        <li><a href="#">Paraguay</a></li>
+                                    </ul>
+                                </div>    
+                            </div>
+                        </div>
+                             <div class="footer-link col-xl-3 col-md-3 text-left">
+                           <h6 class="menuh6 pb-3"><a href="">Tours</a></h6>            
+                            <div class="row">        
+
+                                <div class="col-xl-11">
+                                    <ul class="menuh6-ul-tours m-0">
+                                        <li><a href="#">Argentina</a></li>
+                                        <li><a href="#">Brazil</a></li>
+                                        <li><a href="#">Colombia</a></li>
+                                        <li><a href="#">Uruguay</a></li>
+                                        <li><a href="#">Chile</a></li>
+                                        <li><a href="#">Perú</a></li>
+                                        <li><a href="#">Bolivia</a></li>
+                                        <li><a href="#">Paraguay</a></li>
+                                    </ul>
+                                </div>    
+                            </div>
+                        </div>     
+                             <div class="footer-link col-xl-3 col-md-3 text-left">
+                     <h6 class="menuh6 pb-3"><a href="">Region</a></h6> 
+                         <div class="row">                   
+                            <div class="col-xl-11">
+                                <ul class="menuh6-ul-company" id="menuh6-company-id3">
+                                    <li><a href="#">Argentina</a></li>
+                                    <li><a href="#">Brazil</a></li>
+                                    <li><a href="#">Colombia</a></li>
+                                    <li><a href="#">Uruguay</a></li>
+                                    <li><a href="#">Chile</a></li>
+                                    <li><a href="#">Perú</a></li>
+                                    <li><a href="#">Bolivia</a></li>
+                                    <li><a href="#">Paraguay</a></li>
+                                </ul>
+                            </div>    
+                        </div>
+                    </div>                                     
+                        </div>    
+                    </div>                                                      
+                    </div>
+                <div class="content-social row pt-5 pl-4">
+                        <h5 class="content-social-h6" style="color:#1787df">Content Social</h5>
+                        <div class="social-media text-left">
+                            <UL class="" style="display: block;">
+                                <li><img src="img/social-media/1.jpg" alt=""></li>
+                                <li><img src="img/social-media/2.jpg" alt=""></li>
+                                <li><img src="img/social-media/3.jpg" alt=""></li>
+                                <li><img src="img/social-media/4.jpg" alt=""></li>
+                                <li><img src="img/social-media/5.jpg" alt=""></li>
+                                <li><img src="img/social-media/6.jpg" alt=""></li>
+                                <li><img src="img/social-media/7_.png" alt=""></li>
+                            </UL>
+                        </div>
+                        <div class="col-xl-4 col-md-2 thought text-right d-sm-none">
+                           <button> 
+                               <img src="img/social-media/thought - copia.png" alt="">
+                           </button>
+                        </div>
+                    </div> 
+            </div>
+            <div class="container-terms-conditions p-3">
+                   <div class="container">
+                        <div class="row">
+                            <div class="col-xl-8 terms-conditions pl-4">
+                                <p>Daytours4u 2012 - 2018. Use of this website constitutes acceptance of the Terms & Conditions.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+         </main>
+  </div>
+       <!--   scripts  -->
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="js/owl.carousel.js"></script>
+<!--  fin scripts  -->        
+
+    <!--
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    -->
+    
+<!--    <script src="js/mis_funciones.js"></script>-->
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        var owl= $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:1,
+            nav:true,
+//            autoHeight:true,
+            
+            responsive:{
+                0:{
+                    items:2
+                },
+                900:{
+                    items:3
+                },
+                1000:{
+                    items:4
+                }
+            }
+        });
+            
+        $('.owl-next').on('click',function(){
+            owl.trigger('owl.next',[1000]);
+            })
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+                $("div.container-footer .travel-inspiration").click(function(){
+                $(".experience, .travel, .row-footer-destinations").toggle();                               
+            });
+        });
+    
+    </script>
+    <script>
+            $(document).ready(function(){
+                $(".container-footer").on('click', 'h6', function(){
+                    
+                var x =$(this).siblings('.row')
+                              .find('ul')
+                              .attr('class')
+                              .split(" ")[0]; 
+         
+                    switch(x){
+                            
+                        case "menuh6-ul-destinations":
+                                $("."+x).toggle();  
+                            break;
+                            
+                        case "menuh6-ul-regions":
+                                $("."+x).toggle();  
+                            break;
+                            
+                        case "menuh6-ul-tours":
+                                $("."+x).toggle();  
+                            break;
+                            
+                        case "menuh6-ul-company":
+                                $("."+x).toggle();  
+                            break;
+                    }
+    
+                    if($(".container-footer").find("menuh6-ul-destinations"))
+                    { }
+            
+                });
+            });                    
+        </script>
+    
+    
+    <script>
+        
+    $(document).ready(function(){
+        $(".menu-rwd").click(function(){
+            $('.menu-rwd').toggleClass('logo-rwd');
+            $('header > .container').animate({marginLeft:'40px'});
+            $('.menu-rwd + img').toggle();
+            $('.tab-movil').toggle();    
+        }
+    )});
+    
+    </script>
+    <script>
+        $(document).ready(function(){            
+            $("ul.detours-movil > li > span").click(function(e){
+                $('ul.submenu-detours-movil').toggle(function(){
+                    $('div.tab-movil').css("height","100%");
+                });
+                         
+                });
+                    
+            });   
+    </script>
+    <script>
+        $(document).ready(function(){
+            //e.stopPropagation();            
+            $("ul.submenu-detours-movil li a+span").click(function(e){
+                $('ul.sub-submenu-detours-movil').toggle();
+        });
+        });
+    </script>
+    
+
+</body>
+</html>

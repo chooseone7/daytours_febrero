@@ -1,0 +1,87 @@
+<!-- 
+ 
+ https://www.youtube.com/watch?v=7XgIIohycis
+ https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.ahorradoras.com%2Fwp-content%2Fuploads%2F2015%2F07%2F31.png&imgrefurl=https%3A%2F%2Fwww.ahorradoras.com%2F2015%2F08%2Fcomo-dibujar-animales-y-barcos-de-forma-sencilla%2F&docid=TPp2wVJhXzU2bM&tbnid=lyIziaZS6aXqXM%3A&vet=10ahUKEwjg3LXHjs_eAhWO1lMKHV5eCy4QMwhvKCUwJQ..i&w=673&h=543&bih=911&biw=913&q=n%C3%BAmero%203%20y%20animales&ved=0ahUKEwjg3LXHjs_eAhWO1lMKHV5eCy4QMwhvKCUwJQ&iact=mrc&uact=8
+ 
+ 
+ 
+  Bootstrap tiene 5 tipo de tamaños de resoluciones
+  lead
+  intinialism 
+  
+  list-unstyled
+  list-inline
+  dl-horizontal
+  
+  
+  container
+  row
+  col-md-12
+  table table-striped
+        table-bordered
+        table-sm
+        table-inverse(inverses the colors of the table)
+        table-success,table-danger, table-warning,
+        table-info, table-active
+        table-responsive
+        thead-default, dhead -inverse
+ jumbotron        
+        un gran contenido que incrementa el tamaño de los encabezados y agrega mu cho padding en el
+        jumbotron, jumbotron-fluid
+Breadcrumbs
+       breadcrumbs junto con active       
+
+ Paginación        
+     pagination, pagination-lg, active, disabled
+
+Pager 
+     pager (previous y next)          
+     
+Labels
+     label label-default,
+     label label-primary,
+     label label-success,
+     label label-info
+     label label-warning,
+     label label-danger
+  
+Buttons
+  btn btn-primary,  btn-primary-outline
+  btn btn-secondary, btn-primary-outline
+  btn btn-success, btn-primary-outline
+  btn btn-warning, btn-primary-outline
+  btn btn-danger, btn-primary-outline
+  btn btn-link, btn-primary-outline
+  -in bootstrap 3 btn-secondary was default
+   
+   Images
+   img-rounded,
+   img-circle,
+   img-thumbnail
+   
+Alerts 
+  alert alert-success,   
+  alert alert-info,   
+  alert alert-warning,   
+  alert alert-danger,   
+  alert alert-warning alert-dissmissible fade in
+  
+  Important for the project
+  Cards
+   card-header, card-block- card-title, card-text, card-footer,
+   card card-success
+   
+   
+   1 Tipografia -lápiz escribiendo
+   2 Listas -se enlista en css(se inscribe en una lista)
+   3 Tablas -   un conejo se sube a las mesas y sellar el curso
+   4 Jumbotron - un barco con dumbo y trunks
+   5 breadcrumbs - caballito se come las migajas de los borradoresy el pan
+   6 paginación - un elefante aplana las láminas que traen para el dieseño
+   7 labels  - un boomeran que viaja y le ponen las etiquetas o ppostales del pais destino
+   8 buttons muñeco de nieve se pone botones de colores para mostrar y ofrecer
+   9 images muchos globos con las imagnes de distintas formas,
+       caras, fotos, etc.
+   10 alerts una gallina o un par de amigos encargados de poner
+   alertas a quien se infltre o si todo esta bien , en proceso,etc
+   11 cards celda de la cárcel donde pasan tarjetas para pasar

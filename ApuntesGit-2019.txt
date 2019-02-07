@@ -1,0 +1,19 @@
+Que són
+Como son
+Que hacen
+Cómo hacen 
+
+Commits
+Branches(referencias a un commit:quiero incluir el trabajo de este commit y todos sus ancestros)
+Merge(unificar ambas ramas)
+    crea commit especial que tiene 2 padres.
+Quiero incluir todo el trabajo de este padre de acá y este otro padre de acá, y del conjunto de todos sus ancestros
+Cuando
+-COMMIT
+-BRANCH
+-CHECKOUT
+-CHERRY-PICK
+-RESET
+-REVERT
+-REBASE
+-MERGE

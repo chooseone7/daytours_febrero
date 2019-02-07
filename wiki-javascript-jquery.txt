@@ -1,0 +1,131 @@
+/*
+https://www.w3schools.com/cssref/trysel.asp?selector=li:not(:eq(1))
+https://css-tricks.com/forums/topic/hide-text-but-not-the-before-pseudo-class/
+
+*/
+
+How to find particular class exists on a page using JQuery
+
+Just check how many elements you hit, when you search for it with jQuery
+
+if ($(".Mandatory").length > 0) {
+    // Do stuff with $(".Mandatory")
+    $(".Mandatory").each(function() {
+        // "this" points to current item in looping through all elements with
+        // class="Mandatory"
+        $(this).doSomejQueryWithElement();
+    }); 
+}
+
+EDIT If you wanna do that check for your submit button click, just do that check after the click:
+
+$("input[type='submit']").click(function() {
+    if ($(".Mandatory").length > 0) {
+        // Do some code here
+    }
+});
+
+
+If you want to only do the action once, you could use:
+
+if ($('.Mandatory').length > 0) {
+  //do your thing
+}
+Otherwise if you want to do it for each Mandatory element:
+
+$('.Mandatory').each(function(){
+  //do your thing
+});
+**********************************************************************************
+The element looks like this:
+
+<li class="blah active"> ... </li>
+
+You need to split that into an array:
+
+console.log(jQuery('selector').attr('class').split(' ')[0]);
+
+Or use a regex: var first = $('#foo').attr('class').replace(/^(\S*).*/, '$1');
+
+In this case, you should use prop instead of attr
+
+You can use the following to get the first class only from an element:
+
+var firstClass = jQuery('selector')[0].classList[0]
+*****************************************************************************************
+As of jQuery 1.6, we can also filter the selection with a given jQuery collection or element. With the same nested list as above, if we start with:
+
+var allListElements = $( "li" );
+And then pass this jQuery object to find:
+
+$( "li.item-ii" ).find( allListElements );
+This will return a jQuery collection which contains only the list elements that are descendants of item II.
+
+Similarly, an element may also be passed to find:
+
+var item1 = $( "li.item-1" )[ 0 ];
+$( "li.item-ii" ).find( item1 ).css( "background-color", "red" );
+The result of this call would be a red background on item 1.
+
+Examples:
+Starts with all paragraphs and searches for descendant span elements, same as $( "p span" )
+
+ 
+<p><span>Hello</span>, how are you?</p>
+<p>Me? I'm <span>good</span>.</p>
+ 
+<script>
+$( "p" ).find( "span" ).css( "color", "red" );
+</script>
+ 
+</body>
+</html>
+Demo:
+
+A selection using
+***************************************************************
+
+
+How do I select a sibling element using jQuery?
+$(".auctiondiv .auctiondivleftcontainer .countdown").each(function () {
+    var newValue = parseInt($(this).text(), 10) - 1;
+    $(this).text(newValue);
+
+    if (newValue == 0) {
+        $(this).parent().fadeOut();
+        chat.verify($(this).parent().parent().attr('id'));
+    }
+});
+
+<div class="auctiondivleftcontainer">
+    <p class="countdown">0</p>
+    <button class="btn primary bidbutton">Lance</button>                            
+</div>  
+And then apply this to that button:
+
+$(button here).addClass("disabled");
+$(button here).attr("disabled", "");
+
+
+
+****Solutions****
+
+Here is a link which is useful to learn about select a siblings element in Jquery.
+
+How do I select a sibling element using jQuery
+
+$("selector").nextAll(); 
+$("selector").prev(); 
+you can also find an element using Jquery selector
+
+$("h2").siblings('table').find('tr'); 
+
+Try -
+
+   $(this).siblings(".bidbutton").addClass("disabled").attr("disabled", "");
+   If you want to select a specific sibling:
+
+var $sibling = $(this).siblings('.bidbutton')[index];
+where 'index' is the index of the specific sibling within the parent container.
+$(this).siblings(".bidbutton")
+*****************************************************************

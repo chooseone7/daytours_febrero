@@ -1,0 +1,18 @@
+.mega-menu{
+    overflow: hidden;
+    padding: 10px;
+    width:668px;/*850px;*/
+}
+
+.mega-menu a{text-decoration: none; color:cadetblue;}
+.mega-menu a{text-decoration: none; color:cadetblue;}
+.mega-menu .sub-menu-heading{color: darkcyan;}
+@media(max-width:500){
+    .mega-menu{width: 300px;
+    }
+}
+
+/*
+
+
+*/

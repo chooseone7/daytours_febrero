@@ -1,0 +1,2192 @@
+/*
+Proverbios 14:29 (TLA)
+Proverbios 16:32 (NTV)
+Proverbios 22:24-25 (DHH)
+
+“No te hagas a
+
+
+https://geekytheory.com/temporizadores-en-javascript
+https://www.recursosgeekers.com/2018/03/buenas-y-malas-practicas-con-css-por-edteam.html
+lousy-pésimo, horrible
+
+http://preview.themeforest.net/item/greenlawn-landscape-and-gardening-html-template/full_screen_preview/21731451
+https://jonmircha.com/cursos
+
+https://www.youtube.com/playlist?list=PLvq-jIkSeTUbFYbzpJFN1GLMBZnm9hX5G
+
+Considerar ante resultados no esperados
+70207686 Pierola Franklin
+
+
+El dirctor de google dice que la cantidad de información
+creada desde el inicio de la humanidad hasta el año 2003, 
+ahora se crea cada 2 días en linea
+
+
+1 - Jerarquía de elementos
+2 - Identificar del porqué del efecto no aplicado(conocer las condiciones de            la etiqueta en caso de de tener efecto
+3 - Elementos, clases , idS sintacticamente correctos
+4 - Prioridad de etiqueta: en línea, detalladamente descrita, !important
+5 - Visualización: display,position, overflow,visibility,opacity
+6 - Medias queries, max-width,max-height, min-...height y width auto
+7 - Mal uso de etiquetas y pseudoclases, padding y margin
+
+-no inicializar
+-@import
+-estilos con ID
+-Aplicar estilos a los html
+-!important
+-No entender la cascada
+-0px 0em 0%
+-Abuso de los shorthands
+-Nombrar bien las clases
+-Noagrpar selectores
+No imites en la declarcio´n      deetiquetas la estructura html
+ul li a  si no -> ul.menu li.menu_item a.menu_link{ text-decoration:none}
+y eso que text-decoration debe estar declarado en base normalize,
+
+Ver objetivamente,
+lo que no se ve bien, no me gusta, podría no gustarle a alguien más,
+podría gustarle a alguien más...
+
+
+El Enojo nubla el juicio
+Estrategias Pre-enojo
+
+Personalmente:
+Si se que que lo que me
+quieren reclamar o decir es algo que se que me va alterar,
+postergar la charla
+o dejar hablar hasta 
+el final y concluir
+juiciosamente.
+
+Tomar en cuenta antes de reclamar algo, que es posible que el otro tenga algo que reclamar también.
+
+
+Mirar a los ojos:
+Quiero no enojarme,
+Quiero no ofenderte,
+No hagamos nada que incite
+al otro al alterarse.
+Seamos sincero y encontremos
+soluciones.
+Hagamoslo por la niñas y
+nosotros mismos.
+Aspiremos a que al final de
+esta charla terminemos bien,
+beso, abrazo sinceros y
+dispuestos a mejorar y contribuirnos como familia.
+
+Tenemos 10000 momentos malos,
+feos, dañinos, terribles, avergonzables, empecemos a sumar más de 10000, pero buenos.
+Recordar que los buenos momentos son mejor que los malos y recordar que lindo 
+es estar bien, que nos vean bien. Planear, pasear, disfrutar. El que nos vean sonreir, besarnos, abrazarnos,
+atendernos bien les hará feliz y seguras.
+ES LO QUE PUEDO APORTAR POR AHORA.                                 
+
+
+
+*/
+
+*{
+    border:0;margin:0;padding: 0;
+    box-sizing: border-box;
+ }
+@font-face{
+font-family:"Monserrat";
+src:url("../fonts/monserrat/Chalet.eot");
+src:url("../fonts/monserrat/.eot?#efix")format("embedded-opentype"),
+	url("../fonts/monserrat/Chalet.woff") format("woff"),
+	url("../fonts/monserrat/Montserrat-SemiBold.otf") format("truetype"),
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+    font-family: 'montserratbold';
+    src: url('montserrat-bold-webfont.woff2') format('woff2'),
+         url('montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html,
+body{
+    color: #212529;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+#intro{
+    background: url(../img/bg-machupichu.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    max-height: 100%;
+    position: relative;
+}
+
+/*Abert ribera bolivia band*/
+.row-destination-form{
+    position: relative;
+    z-index: 0; 
+}
+.row-destination-form .destination-form{
+    width: 100%;
+}
+.row-bigtitle-tours .bigtitle{
+    position: relative;
+    padding-top: 29%;
+    left: 0;
+}
+.row-logo-megamenu{
+    position: relative;
+    padding-top: 47px;
+}
+.row-logo-megamenu div.logo-daytours{
+/*    padding-top:4%;*/
+    position: relative;
+    z-index: 2;
+}
+div.logo-daytours{
+    position: relative;
+    z-index:1;
+}
+
+/*CONTAINER WHYDETOURS*/
+.container-whydetours div{
+    color:#fff;
+}
+.container-bigtitles .destination-form{
+    position: absolute;
+    top:27%;
+    left: 10%;
+}
+.row-whydetours{
+    padding-top: 20px;
+    position: relative;
+}
+.row-whydetours .whydetours{
+    padding-top:14%
+}
+.row-whydetours div span{
+    color:#fff;
+}
+.searcher-magnifying{
+    position: absolute;
+    top:18px;
+    right: -4px;
+    
+}
+ul.signing li:last-child a{
+    display: block;
+    margin-top: 30%;
+}
+ul.signing li:nth-child(2) a
+{
+    color:#008fff !important;
+}
+li.custom-links:before{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+h1{
+     text-align: center;  
+}
+header{
+    background-color: #1d2e3c;
+    font-family: 'Montserrat', sans-serif;
+    height: 35px;
+}
+.logo-rwd{
+    color:#ccc;
+    display: none;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+img{
+    height: auto;
+    max-width: 100%;
+}
+ul.top-menu{
+    color:#fff;
+    padding-top: 10px;
+}
+ul.top-menu li {
+    list-style: none;
+    display: inline-block;
+}
+ul.top-menu li a{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+div.registro{
+    padding-top: 0px;
+    position: relative;
+    text-align: right;
+    z-index: 999;
+}
+div.registro a{
+    color:#fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+button.btn-primary-daytours,
+button.btn-primary-daytours2{
+    background:#1d2e3c;
+    border: 0;
+    color:#1787df;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+/*btn-discover*/
+a.btn-discover{
+    border: 1px solid #000;
+    padding: 7px;
+}
+a.btn-discover b{
+    color:#000;
+}
+a.btn-discover::after{
+    content: "\f178";
+    font-family: FontAwesome;
+    color: #018fff;
+    font-size: 14px;
+    margin-left: 15px;
+    position: relative;
+    left: 0;
+}
+
+button.btn-primary-daytours,
+button.btn-primary-daytours2,
+{
+    color:#1787df;
+}
+/*TOP-BAR*/
+.top-navbar{
+    font-size: 13px;
+}
+ul.navbar-nav li a{
+    padding-left: 11px !important;
+    padding-right: 12px !important;
+}
+li.searcher-magnifying{
+    margin-top: -7px;
+    margin-left: 7px;
+}
+li.searcher-magnifying:before{
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 22px;
+    color: #fff;
+}
+.tab-movil{
+    display: none;
+}
+ul.submenu-detours-movil {
+    display: none;
+}
+ul.sub-submenu-detours-movil {
+    display: none;
+}
+.dropdown-daytours span,
+.dropdown-daytours2 span{
+    font-size: 13px;
+}
+.dropdown-daytours, 
+.dropdown-daytours2{
+    margin-top: 4px;
+    
+}
+.btn-primary-daytours:hover,
+.btn-primary-daytours2:hover {
+    background-color:#1d2e3c;
+}
+.dropdown-item-daytours1 {
+    border:0;
+    background-color: #1d2e3c;
+    clear: both;
+    font-weight: 400;
+    font-size: 11px;
+    color: #fff;
+    padding: .25rem 1.5rem;
+    text-align: inherit;
+    text-transform: uppercase;
+    white-space:normal;
+    width: 100%;
+}
+/* BIEN SUPERIOR*/
+.dropdown-menu-daytours1,
+.dropdown-menu-daytours2{
+    background-color: #1d2e3c;
+}
+.dropdown-menu-daytours1 a,
+.dropdown-menu-daytours2 a{
+    color:#fff;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #1d2e3c;
+}
+.dropdown-item-daytours2:focus,
+.dropdown-item-daytours:focus,
+.dropdown-item-daytours:hover {
+    color: #1787df;
+    text-decoration: none;
+    background-color: #1d2e3c;
+}
+
+.btn-primary-daytours:not(:disabled):not(.disabled):active,
+.btn-primary-daytours2:not(:disabled):not(.disabled):active,
+.show>.btn-primary-daytours.dropdown-toggle{
+    color: #fff;
+    background-color: #1d2e3c;
+    border-color: #005cbf;
+}
+
+ul.top-menu li a::before{
+    background: url("../img/question-marck.jpg") no-repeat;
+    content: "";
+    display: inline-block;
+    margin-top: 2px;
+    margin-right: 10px;
+    vertical-align: top;
+    width: 14px;
+    height: 14px;
+}
+ul.top-menu li + li a::before{
+    background: url("../img/thought.jpg") no-repeat;
+    content: "";
+    display: inline-block;
+    margin-top: -2px;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 15px;
+    height: 13px;
+}
+div.registro  div.number::before{
+    content: "";
+    display: inline-block;
+    margin-top: -2px;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 15px;
+    height: 13px;
+}
+div.signing + div.col{
+    text-align: right;
+}
+ul.signing,
+div.mytours{
+        padding-top: 10px;
+}
+
+ul.signing  li a{
+    color:#fff !important;
+}
+ul.signing  li a span{
+    color:#ccc;
+}
+ul.signing li:first-child a::before,
+ul.signing li:nth-child(3) a::before{
+    background: url("../img/login.jpg") no-repeat;
+    content: "";
+    display: inline-block;
+    margin-top: -2px;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 15px;
+    height: 13px;
+}
+ul.signing li:nth-child(3) a::before{
+    background: url("../img/luggage.png") no-repeat;
+
+}
+div.registro div.number span{
+    color:#fff;
+    background: #008fff;
+    display: inline-block;
+    font-size: 18px;
+    position: relative;
+    width: 41px;
+    text-shadow: none;
+    padding: 1px 6px;
+    height: 39px;
+}
+div.registro div.signing a.active{
+    color:#008fff;
+}
+div.number.col-xl-2{
+    margin-top: 2px;;
+}
+div.number.col-xl-2:before{
+    background: #008fff;
+    color: #fff;
+    content: "5";
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: -15px;
+    margin-right: 10px;
+    padding-top: 16px;
+    text-align: center;
+    vertical-align: middle;
+    width: 45px;
+    height: 45px;
+}
+div.sign-cart{
+    display: none;
+}
+div.main-bg .container .row{
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+div.main-bgimage{
+    margin-top: -10px;
+    position: relative;
+    z-index: 1;
+}
+div.logo{
+    text-align: left;
+    position: relative;
+    z-index:3;
+}
+ul.menu-daytours3 li{
+    list-style: none;
+}
+ul.menu-daytours3 li a{
+    color:#fff !important;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.frm-searcher-daytours1{
+    position: relative;
+    z-index:1;
+}
+.frm-searcher-daytours1 input[type="text"]{
+    position: relative;
+    z-index:2;
+    width:100%;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+    background-color: #1d2e3c;
+    border-color: #1d2e3c;
+}
+/*search-txt*/
+.search-txt{
+    display: none !important;
+    width: 80%;
+}
+
+/*FIN SEARCHER TEXT*/
+.frm-searcher-daytours1 button::before{
+    content: "";
+    background: url(../img/white-searcher.png) no-repeat 0px 0px;
+    background-color:#70acdd;
+    display:block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    z-index: 3;
+}
+.bigtitle h3{
+    font-size:49px;
+}
+.mega-menu .sub-menu-heading-daytours {
+    color: #1d2e3c;
+    text-align: left;
+}
+.mega-menu .sub-menu-heading{
+    color: #000 !important;
+}
+div.row-bigtitle-tours{
+    position: relative;
+}
+div.searcher-content{
+   position: relative;
+}
+.bigtitle{
+    color:#fff;
+    font-family: "Montserrat";
+    font-size: 42px;
+    font-weight: 700;
+    margin-top:15%;
+    position: relative;
+    text-transform: capitalize;
+}
+.row-destination-form{
+    position: relative;
+    margin-top:4%;
+}
+.destination-menu {
+    text-align: right;
+    display: inline-block;
+}
+
+.btn-primary-daytours4:not(:disabled):not(.disabled).active,
+.btn-primary-daytours4:not(:disabled):not(.disabled):active,
+.show>.btn-primary-daytours4.dropdown-toggle{
+    background: #dde0e2;
+}
+button.btn-primary-daytours4{
+    background: #ffffff; 
+    color: #1787df;
+}
+..dropdown-menu-daytours4.show {
+    background: #dde0e2;
+}
+.dropdown-item-daytours4:hover {
+    background-color:#dde0e2;
+}
+button.btn-primary-daytours4 a:hover{
+    background-color: red;
+}
+button.btn-primary-daytours4:hover{
+    background:#fff !important;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active
+{
+    color: #fff;
+    background-color: #dddfe0;
+    border-color: #dddfe0 !important;
+}
+.btn-daytours:focus{
+/*    border:1px solid;*/
+}
+button.btn-primary-daytours4 span{
+    color:#000;
+    padding-left: 6px;
+}
+.col-dropdown-destinationform{
+    text-align: right;
+}
+div.col-dropdown-destinationform button{
+    background-color:#dde0e2;
+    border: 0;
+    border-radius: 0;
+    padding-top: 11.5px;
+    padding-bottom: 15.9px;
+    text-align: left;
+}
+.col-destinationform-text{
+    text-align: left;
+}
+.col-destinationform-text input[type="text"]{
+    padding-top: 13.5px;
+    padding-bottom: 13.5px;    
+    width: 100%;
+}
+.container-daytours-explore-the-adventure{
+    position: relative;
+}
+.col-destinationform-button{
+    text-align: left;
+}
+.col-destinationform-button button{
+    background-color:#ff5a00;
+    border:0;
+    border-radius: 0;
+    color:#fff;
+    font-weight: bold;
+    padding-top: 13.5px;
+    padding-bottom: 13.5px;  
+    text-transform:uppercase;
+    vertical-align: top;
+}
+.navbar-daytours{
+    background-color: transparent !important;
+    color:#000;
+    padding-left: 0!important;
+}
+
+.mega-menu p strong.sub-menu-heading-daytours{
+    color:#1d2e3c;
+    text-align: left;
+}
+.mega-menu-daytours{
+    margin-left: -141px;
+}
+.mega-menu-daytours p{
+    font-size: 15.5px;
+    text-align: left;
+    line-height: 15.8px;
+}
+
+nav.navbar-daytours a.nav-link-daytours{
+    color:#fff !important; 
+    font-weight: bold;
+}
+nav.navbar-daytours ul li a{
+    color:#000;
+    font-family: "montserratregular";
+    font-size:14.3px;
+    
+}
+p a.view-more{
+    color:#008fff !important;
+    font-size:11px;
+    font-weight: bold;
+}
+nav.navbar-daytours ul li a:hover{
+color:#008fff;
+}
+p a .view-more{
+    font-size:13px;
+}
+button.btn-daytours{
+    display: none;    
+}
+button.btn-daytours:hover{
+    background-color: transparent;
+}
+button.btn-daytours:active{
+/*    background-color:brown;*/
+}
+.navbar-collapse-daytours{
+    display: block;
+}
+.container-daytours-join-adventure{
+    background: #fff;
+    font-size: 13px;
+    margin-top: 43px;
+}
+
+/*container-daytours */
+
+.container-daytours-join-adventure h5{
+    font-family: "Montserrat";
+    font-weight: bold;
+    padding-top: 32px;
+    margin-bottom: 38px;
+    text-align: left;
+}
+/*EXPLORE THE ADVENTURE*/
+.explore-the-adventure .col-xl-3{
+    padding-left:0;
+    padding-right: 0;
+}
+.explore-the-adventure .col-xl-3 .row{
+    width: 95%;
+    border: 1px solid #ccc;
+}
+.explore-the-adventure .col-xl-3 .row h6{
+border: none;
+}
+div.container-price-button{
+   width: 100%; 
+}
+.explore-the-adventure h6{
+    color:#1d2e3c;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+.explore-the-adventure p{
+    margin-bottom: 5px;
+    
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+        margin-left: 7px;
+}
+
+main.explore-the-adventure div p.reviews,
+div span.reviews{
+    background: url(../img/review.png) repeat-x;
+    margin-top: 10px;
+    margin-left: 18px;
+    margin-bottom: 10px;
+    height: 12px;
+    width:44px;
+}
+main.explore-the-adventure div p.reviews + div { 
+     display: inline-block;
+    font-family: "Montserrat";
+     margin-top: 10px;
+}
+.price-datyours + button{
+    margin-right:8px;
+}
+main.explore-the-adventure div p.reviews + div p{
+    font-weight: bold;
+} 
+main.explore-the-adventure div p.reviews ~ button,
+div.container-price-button button{
+    background-color: #008fff;
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: 15px!important;
+    margin-bottom: 15px;
+}
+.container-daytours-explore-the-adventure h4{
+    font-family: "Montserrat";
+    font-weight: bolder;
+}
+
+.price-datyours{
+    display: inline-block;
+    margin-top:-10px;
+}
+
+/*fin TRENDING CITIES*/
+
+.trending-activities h5{
+     font-family: "Montserrat";
+}
+.thumbnail {
+    position: relative;
+}
+.thumbnail span b{
+    background: url(../img/social-media/a-r.png) no-repeat 10px 10px;
+    padding-left: 27px;
+    padding-top: 7px;
+}
+
+.caption {
+    position: absolute;
+    top: 21%;
+    left: 0;
+    width: 100%;
+}
+
+#box-search .caption p
+{
+    color:#fe5a00;
+}
+#box-search .caption div > h3{
+    color:#fe5a00;
+}
+#box-search .caption h3 b{
+    color:#fff;
+}
+
+
+h3#carnival_round{
+    color:#fe5a00 !important;
+}
+#box-search .caption h3{
+    color:#fff;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+#box-search .caption span a{
+    color:#fff;
+    font-size: 11px;
+    text-decoration: none;
+}
+#box-search .caption p {
+    color:#fff;
+}
+/*About Daytours*/
+main.about-daytours div button {
+    /**/
+}
+
+main.about-daytours h2{
+    
+}
+main.about-daytours .row{
+    color: #212529;
+    background-image: url(../img/about-daytours/bg-about-daytours.png) ;
+    background-repeat: no-repeat;
+    height: 814px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+main.about-daytours .row h2{
+    color:#008fff;
+}
+/*Fin container-daytours*/
+
+/*Testimonials-subscribe*/
+div span.reviews + span b{
+    color:#1d2e3c;
+    font-weight: bold;
+    font-family: "Montserrat";
+    
+}
+.testimonials h4{
+    font-size: 32px;
+}
+.testimonials .ml-2{
+    position: absolute;
+    top: 0px;
+
+}
+
+main.testimonial-subscribe .subscribe-daytours{
+     background: url(../img/testimonials-subscribe/bg-letter.png) no-repeat;
+     display: block;
+     padding-left:15px;
+     background-position: center;
+     background-size: contain;
+     position: relative;
+}
+main.testimonial-subscribe .subscribe-daytours:before{
+/*
+     background: url(../img/testimonials-subscribe/postal.png) no-repeat;
+     display: block;
+     padding-left:15px;
+*/
+}
+main.testimonial-subscribe .subscribe-daytours p{
+    max-width: 417px;
+}
+
+.subscribe-daytours form input[type="text"]{
+    background-color:#e3e4e4;
+    color:#000;
+    padding: 12px;
+    padding-right:30px;
+    max-width: 100%;   
+    width: 100%;
+}
+
+.subscribe-daytours::placeholder{
+    background: url(../img/testimonials-subscribe/letter.jpg) no-repeat 10px 5px;
+    margin-top:32px;
+    padding-left:40px;
+}
+
+.subscribe-daytours form button{
+    background: url(../img/testimonials-subscribe/subscribe.png) no-repeat  10px 16px;
+    background-color:#ff5a00;
+    border:1px solid #ccc;
+    color:#ff5a00;
+    display: block;
+    margin-bottom: 40px;
+    padding:24px;
+    height: auto;
+    width: 17%;
+}
+.why-detours{
+    padding-bottom: 32px;
+}
+
+/*FOOTER SECTION*/
+
+main.footer-main{
+/*    background: url(../img/footer-imgs/footer_02.png) no-repeat;*/
+        background: url(../img/footer-imgs/bg-footer.jpg) no-repeat;
+    background-color: #1f2f3d;
+    background-size: 100%;
+    position: relative;
+}
+
+.container-footer .travel2{
+    color:#fff;
+}
+div.container-footer h6,
+div.container-footer li a{
+    color: #fff !important;
+    font-family: "montserratregular";
+    font-size: 12px;
+    text-align: left;
+}
+.container-footer .row > div > h6
+{
+    color:white;
+    border-top:0px solid;
+    font-size: 15px !important;
+    font-weight: 600;
+}
+.container-footer .row > div > h6.travel-inspiration {
+    color:#1787df !important;   
+}
+div.row div h6.menuh6{
+    font-size: 17px!important;
+    margin-left: 52px;
+    text-align: center;
+}
+
+h6.menuh6 a{
+    color:#1787df !important;   
+    
+}
+.footer-link{
+    padding-left: 0;   
+    padding-right: 0;
+}
+
+.container-footer div ul li{
+    list-style: none;
+    text-align: left;
+}
+
+.container-footer div ul li a{
+    color:#a1a4a8;
+    text-decoration: none; 
+}
+
+.social-media li{
+    list-style: none;
+    display: inline-block;
+    padding-left:30px;
+}
+.tought button{
+    border-radius:4px;
+    padding:6px;
+    background-color:#1787df;
+}
+
+h6.travel{
+  color:#fff !important;
+}
+
+
+div.container-footer {
+    position: relative;
+    padding-top: 66px !important;
+}
+.footer-links .footer-link ul li{
+    margin-left: 100px;
+}
+
+h6.content-social{
+    color:#1787df;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+.container-terms-conditions{
+    background-color: #182632;
+    color:#a1a4a8;
+}
+
+.container-footer .row p{    
+    font-size: 12px;
+    font-style: italic;
+}
+
+.container-footer .row p b {
+    color:#1787df;
+    font-style: normal;
+}
+div.terms-conditions p{
+    color:#fff;
+    font-family: "Montserrat";
+}
+
+.container-terms-conditions{
+    width: 100% !important;
+}
+
+
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1270px !important;
+    }
+    h6.travel-inspiration{
+        font-size:13px !important;
+    }
+    
+    div.logo{
+        text-align: center;
+    }
+    div.row-bigtitle-tours {
+          margin-top: 0; 
+    }
+    
+}
+
+@media (max-width: 1200px){
+    div.logo{
+        text-align: center;
+    }
+    .subscribe-daytours-h4{
+        margin-top: 53px;
+    }
+    
+    .container-footer{
+        max-width: 100%;
+    }
+    .container-daytours-join-adventure{
+        max-width: 100%;
+    }
+    .caption {
+        left: 48px;
+        width: 94%;
+    }
+    #box-search .caption p{
+        width: 90%;
+    }
+    .row-whydetours .whydetours{
+        margin-top: 10%;
+    }
+    .row-footer-links{
+        display: flex;
+        justify-content: space-around !important;
+    }
+    
+    .container-daytours-explore-the-adventure,
+    .trending-activities-container,
+    .about-daytours-container,
+    .testimonial-subscribe-container{
+        padding-right: 0;
+        max-width: 100%;
+    }
+    main.testimonial-subscribe .subscribe-daytours p{
+        max-width: 50%;
+/*        border: 1px solid red;*/
+    }
+    div.row div h6.menuh6{
+        text-align: left;
+        margin-left: 55px;
+    }
+    
+    .top-navbar nav.row{
+/*        background: red;*/
+        width: 100%;
+    }
+ 
+    .row-footer-links > .col-md-3{
+        margin-left: 30%;;
+        margin-bottom: 47px;
+    }
+}
+
+@media (max-width: 992px){
+    div.logo{
+        text-align: center !important;
+    }
+    #intro{
+        height: 62% !important;
+    }
+    #box-search div.thumbnail img{
+        width: 100%;
+    }
+    div.logo{
+        text-align: center;
+    }
+    #intro{
+        height: 76%;
+    }
+    .container{
+        max-width: 100% !important;
+    }
+    .container-daytours-join-adventure img{
+        width: 100%;
+    }
+    .row-destination-form .destination-form{
+        position: absolute;
+        z-index: 1;
+        margin-top:36%;/*17%*/
+    }
+    div.col-dropdown-destinationform button {
+        background-color: #dde0e2;
+        border: 0;
+        border-radius: 0;
+        padding-top: 11.5px;
+        padding-bottom: 15.9px;
+        text-align: left;
+    }
+    .col-destinationform-text input[type="text"] {
+        padding-top: 13.5px;
+        padding-bottom: 13.5px;
+        width: 100%;    
+    }
+     .travel, .experience, .row-footer-destinations{
+        display: flex;
+    }
+    #box-search div.thumbnail img{
+        margin-top: 10px;
+    }
+    .join-the-adventure-andes{
+        margin-top: 12px;
+    }
+    .join-the-adventure-desert{
+        margin-top: 12px;
+    }
+    .join-the-adventure-patagonia{
+        margin-left: -12px;
+    }
+    .join-the-adventure-jungle{
+        margin-top: 12px;
+        margin-left: -12px;
+    }
+    
+    .owl-carousel .item .row {
+        margin-left: -5px;
+    }
+    .owl-carousel .item .row img{
+        margin-left: 10px; 
+        width: 100%;
+        height: 100%;
+    }
+    main.about-daytours div button {
+        background: url(../img/social-media/arrow-right.png) 110px 19px no-repeat transparent;
+    }
+    
+    .dropdown-daytours span, .dropdown-daytours2 span{
+        font-size: 11px;
+    }
+    
+    div.logo{
+        text-align: left;
+    }
+    .top-navbar nav{
+        font-size: 11px;
+    }
+    .top-navbar-1{
+        padding-left: 0;
+    }
+    ul.signing li:nth-child(2) a {
+        margin-right: 9px;;
+    }
+    ul.signing li:nth-child(3) {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    ul.signing li{
+        list-style: none !important;
+    }
+    
+    .bigtitle{
+        margin-top: 0;
+    }   
+    .row-whydetours{
+        padding-top:0;
+    }
+    
+    main.testimonial-subscribe .subscribe-daytours{
+        background-size: 687px 368px;
+        padding-top: 122px !important;
+        border: 1px solid red;
+    }
+    .owl-next{
+        background: red !important;
+    }
+    
+/* medida mediana-pequeña*/    
+    .row-destination-form .destination-form{
+        margin-top: 0;
+    }
+    ul.signing, div.mytours{
+        font-size: 11px;
+    }
+    
+    .container-footer .row > div > h6{
+        font-size: 15px !important;
+    }
+    
+    div.container-footer{
+        padding-bottom:0 !important;
+    }
+    .container-daytours-explore-the-adventure{
+        padding-left: 0;
+    }
+    .owl-next{
+        display: none!important;
+    }
+    
+    .container-daytours-join-adventure{
+        max-width: 100%!important;
+
+    }    
+    .travel1{
+        text-align: left;
+    }
+    .travel1, .travel2{
+        display: inline-block;
+        width: 48%;
+    }
+    
+    .travel1 img{
+        vertical-align: text-bottom;
+    }
+    
+/*https://www.facebook.com/LosDelChinchorreo247Inc/videos/309928796316514/*/
+}
+@media (max-width: 767px){     
+    header{
+        background-color:#fff !important;
+        position: relative;
+        margin-top:0;
+        margin-left: 0;
+        margin-bottom: 38px;
+        
+    }    
+    header > .container{
+        margin-left: 21px;
+    }
+    .bigtitle{
+        padding-bottom: 20px;   
+        padding-top:32px;
+    }
+    .tab-content{
+        color:#fff;
+    }
+    .tab-movil{
+        background-color: #1d2e3c;
+    }
+    .tab-movil > div.d-flex{
+        background-color:#212529;
+        justify-content: flex-start;
+    }    
+    li.nav-item{
+        position: relative;
+    }
+    a.nav-link.active {
+        background-color: #1d2e3c;;
+        padding-top: 22px;
+        padding-bottom: 23px;
+        padding-right: 78px;
+        
+    }
+    li.nav-item a.nav-link:not(.active){
+        padding-top: 22px;
+        padding-right: 78px;
+        padding-bottom: 23px;
+        padding-left: 10px;
+    }
+    a.nav-link.active{
+        padding-left: 10px;
+        width:100%;
+    }
+    li.nav-item:nth-child(3) a{
+        padding-bottom: 29px;
+    }
+    .tab-movil ul{
+        background-color:inherit;
+    }
+    .tab-movil a{
+        padding:8px 80px;
+        color:#008fff !important;
+        
+    }
+    ul.submenu-detours-movil li{
+        list-style: none;
+    }
+    .innerContent{
+        margin:5% 1%;
+        border:1px solid rgba(0,0,0, 0.178);
+
+    }
+    a#step1-tab::before{
+        background: url("../img/compass-menuicon.png") no-repeat;
+        content: "";
+        display: block;
+        margin-top: 14px;
+        margin-left: 70px;
+        height: 28px;
+        width: 24px;
+    }
+    a#step2-tab::before{
+        background: url("../img/login.jpg") no-repeat;
+        color: #fff;
+        content: "";
+        display: inline-block;
+        font-family: FontAwesome;
+        font-size: 24px;
+        margin-top: 11px;
+        margin-left: 70px;
+        height: 24px;
+        width: 24px;
+    }
+    a#step3-tab::before{
+        content: "\f013";
+        color: #fff;
+        font-family: FontAwesome;
+        font-size: 24px;
+        margin-top: 14px;
+        margin-left: 70px;
+    }
+    ul.detours-movil {
+        text-align: left;
+        list-style: none;
+        position: relative;
+    }
+    ul.detours-movil li{
+        border-bottom: 1px solid #263644;
+        padding-top:10px;
+        padding-bottom: 10px;
+        position: relative;
+        
+    }  
+    ul.detours-movil li a{
+        text-decoration:none;
+    }
+    ul.detours-movil li a+span::before{
+        content: "\f0d7";
+        font-family: FontAwesome;
+        font-size: 15px;
+        color: #008fff !important;
+        display: inline-block;
+        cursor:pointer;
+        position: absolute;
+        right: 10px;
+        float: right;
+    }
+    ul.submenu-detours-movil li a+span::before{
+        color:#fff !important;
+        margin-right: 20px;
+    }  
+    ul.detours-movil li a{
+        color: #008fff !important;
+        font-size: 16px;
+        font-family: "Montserrat";
+        font-weight: 800;
+        text-align: left;
+        padding-left:0;
+    }  
+    ul.submenu-detours-movil li a{
+        color:#fff !important;
+        font-weight: 400;
+    }
+    .owl-next{
+/*        display: none;*/
+    }
+    .row-destination-form .destination-form{
+        height: 340px;
+        width:94%;
+    }
+    .row-destination-form{
+        margin-left: 26px;
+    }    
+    i.fa{
+        cursor: pointer;
+    }
+    .logo-rwd{
+        display: block;
+        padding-top:10px;
+    }
+    .fa-navicon:before, 
+    .fa-reorder:before,
+    .fa-bars:before{
+        display: block;
+        margin-top: 2px;
+        padding-right: 8px;
+        color: #000;
+        font-size: 21px
+    }    
+    .logo-rwd .fa{
+        color:#ccc;
+    }
+    .row-logo-megamenu{
+        display: none;
+    }
+    .destination-form{
+        padding-left: 0;
+        padding-right: 0;
+    } 
+    button.btn-primary-daytours,
+    button.btn-primary-daytours2{
+        display: none;    
+    }
+    ul.signing, ul.registro{
+        display: none;
+    }
+    ul.top-menu li a::before,
+    ul.top-menu li + li a::before{
+        display: none;
+    }
+    .btn-primary-daytours4{
+        width: 100%;
+    }
+    button.btn-primary-daytours4 span{
+        display: inline-block;
+        width: 98%;
+    }
+    .col-destinationform-text{
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+    .col-destinationform-text input[type="text"]{
+        padding-left: 16px;;
+    }
+    a.dropdown-item-daytours4{
+        display: inline-block;
+        width: 98%;
+    }
+    .warning-daytours4you{
+        width: 100%;
+    }
+    .search-categorylist1{
+        border-radius: 3px;        
+        width: 100% !important;
+        min-width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+        z-index: 1;
+    }
+    .row-whydetours{
+        display: none;
+    }
+    .container-daytours-join-adventure{
+        max-width: 710px;        
+    }
+    .container-daytours-join-adventure img{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .mega-menu{
+        overflow: hidden;
+        padding:10px;
+        width: 800px; 
+    }
+    .mega-menu a{
+        text-decoration:none;
+        color:cadeblue;
+    }
+    .mega-menu .sub-menu-heading{
+        color: darkcyan;
+    }
+    .container-footer ul{
+        display: none;
+    }
+    .container-footer .row > div > h6{
+        font-size: 16px;
+    }
+    .container-footer h6{
+        border-top:1px solid;
+    }    
+    div.container-footer h6.travel-inspiration:after{
+        right: 13px;
+    }    
+    div.container-footer h6:after{
+       content: "\f107";
+        cursor: pointer;
+        font-family: FontAwesome;
+        color: #fff;
+        float: right;
+        font-size: 21px;
+        line-height: 19px;
+        position: absolute;
+        right: 13px;/*10px;*/
+    } 
+    div.container-footer h6.travel:after{
+        content: "";
+        background: yellow;
+    }
+    :not(div.container-footer h6.travel:after){
+        content: "\f107";
+        cursor: pointer;
+        font-family: FontAwesome;
+        color: #fff;
+        float: right;
+        font-size: 21px;
+        line-height: 19px;
+        position: absolute;
+        right: 10px;
+        background: blue !important;
+    }
+    .container-terms-conditions{
+        background-color:transparent!important;
+    }
+    .owl-stage-outer{
+        margin-left:-38px;
+    }
+    
+    .travel, .experience, .row-footer-destinations{
+        display: none;
+    }
+    #intro{
+        height: 82% !important;
+    } 
+    .row .explore-cities-4{
+        display: none;
+    }
+    .owl-next{
+        display: none;
+    }
+    div.sign-cart{
+        display: block;
+        top: 10px;
+        position: absolute;
+        right: 39px;
+    }
+    div.sign-cart span:before{
+        content: "\f002";
+        color:black !important;
+        font-family: FontAwesome;
+        font-size: 22px;
+        color: #fff;
+    }
+    div.sign-cart span.suitcase:before{
+        background: url(../img/minicart-iconmobile.png);
+        content: " ";
+        width: 21px;
+        display: inline-block;
+        height: 20px;
+        font-family: FontAwesome;
+        font-size: 22px;
+        color: black !important;
+}
+    
+    .join-the-adventure-desert{
+        margin-top: 0;
+    }
+    .join-the-adventure-patagonia{
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .join-the-adventure-andes{
+        margin-top: -3px;
+    }
+    .join-the-adventure-jungle{
+        margin-top: -3px;
+        margin-left: 0;
+    }
+    main.testimonial-subscribe .subscribe-daytours{
+        padding-right: 0;
+    }
+    .news-letter-daytours{
+        margin-bottom:-37px;
+        position: relative;
+        width: 98%;
+    }
+    .row{
+/*        width: 100% !important;*/
+    }
+    form.news-letter-daytours-form{
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 60px;
+        margin-right: 0;
+        width: 77%;
+    }
+    
+    .col-xl-3.col-md-3.mr-2,
+    .container-footer .row .col-xl-2.col-md-2{
+        border-bottom: 1px solid #283743;
+        margin-top: 16px;
+    }
+    form.news-letter-daytours-form{
+        max-width: 89% !important;
+    }
+    header > .container{
+        margin-left: 0;
+    }
+    .row-destination-form{
+        margin-left: 20px;
+    }
+    
+    .footer-links .footer-link .row{
+        width: 100%;
+    }
+        
+    div.container-footer .row > div > h6{
+        font-size: 15!important;
+    }
+    
+    .top-navbar nav.row{
+        margin-left: 15px;    
+    }
+    .container-footer{
+        
+    }
+}
+@media(max-width:575px){
+    
+    
+    .mega-menu{
+        width: 300px;
+    }
+    .row-destination-form .destination-form{
+        margin-top: 52%;
+    }
+    .btn-primary-daytours4{
+        margin-right: 12px;
+        width: 94%;    
+    }
+    
+    #box-search div.thumbnail img{
+        margin-top: 8px;
+    }
+    
+    main.about-daytours div button{
+        width: 26%;
+    }
+    
+    .subscribe-daytours form{
+        margin-left: 13px;
+    }
+    .subscribe-daytours form > div{    
+        width: 85% !important;
+        margin-left: 11px;
+        
+    }
+    .subscribe-daytours form > div + div{    
+        width: 10% !important;
+        margin-left: -11px;
+    }
+    .col-destinationform-text input[type="text"],
+    .col-destinationform-button button{
+        width: 100%;
+        margin-left: -4px;
+    }
+
+    .owl-next{
+        display: none !important;
+    }
+    .bigtitle{
+
+    }
+
+    .row-destination-form .destination-form
+    {
+        margin-top: 4%;
+    }
+    /*Explore the cities*/
+    .row-explore-aventure .owl-carousel img{
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .container-footer ul{
+        display: none;
+    } 
+    .content-social{
+        padding-top: 4px !important;
+        padding-left: 0!important;    
+        
+    }
+    .thought{
+        display: none;
+        
+    }
+    .social-media li{
+        padding-left: 19px;
+    }
+    h5.content-social-h6{
+        margin-left: 16px;
+    }
+    .explore-cities-1 .container-price-button{
+        margin-top:27px !important;
+    }
+    .explore-cities-3{
+        display: none;
+    }
+    .explore-cities-2 .container-price-button{
+        margin-top: 29px !important;
+    }
+    #box-search .caption h3{
+        margin-left: -30px;
+    }
+    #box-search .caption p{
+        margin-left: -30px;
+        width: 100%;
+    }
+    main.testimonial-subscribe .subscribe-daytours p {
+        width: 53%;
+/*        border: 1px solid red;*/
+        font-size: 13px;
+        margin-left: 17% !important;
+}
+    
+    .col-destinationform-text{
+/*        margin-left:10px;*/
+    }
+    .btn-primary-daytours4{
+        margin-left: -3px !important;
+        width: 100%;
+    }
+    .caption span a{
+        display: none;
+    } 
+    .dropdown-toggle::after{
+        margin-left: -4px;
+    }
+    
+    h4.subscribe-daytours-h4{
+        font-size: 18px;
+        margin-left: -29px;
+    }
+    main.testimonial-subscribe .subscribe-daytours{
+        background-size: 483px 301px;
+        margin-left: 2px;
+    }
+
+    .row-footer-links > .col-md-3{
+        margin-left: 8%;
+        margin-bottom: 0;
+    }   
+    
+    .explore-the-adventure{
+        margin-left: 50px !important;
+    }
+}
+
+
+@media(min-width:320px){
+    
+  
+}
+
+@media  (max-width:320px){
+      main.testimonial-subscribe .subscribe-daytours {
+        background-size: 407px 295px !important;
+        margin-left: 2px;
+    }
+    
+    #intro {
+        height: 86% !important;
+    }
+    .explore-cities-1 .container-price-button{
+        margin-top: 30px !important;
+    }
+    .search-categorylist1{
+        margin-left: 6px;
+    }
+    
+    .join-the-adventure-andes {
+        margin-top: 0;
+    }
+    .search-categorylist1{
+        margin-left: 0;
+    }
+    main.testimonial-subscribe .subscribe-daytours{
+        background-size: 330px 289px;
+        margin-left: 2px;
+    }
+ 
+    div.sign-cart {
+        right: 19px;
+}
+}
+
+
+/*
+Ley del menor esfuerzo
+no invertir energía mental en la otra persona
+todo el día, si no creciendo como persona.j
+Luego lo que seaq que pase será lo mejor.
+Lo mejor es estar tranquilo sin ansiedad y desgastando entermía
+
+
+Below full options and values.
+
+Breakpoint & up (toggle on value and above):
+
+@include media-breakpoint-up(xs) { ... }
+@include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... }
+breakpoint & up values:
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+breakpoint & down (toggle on value and down):
+
+@include media-breakpoint-down(xs) { ... }
+@include media-breakpoint-down(sm) { ... }
+@include media-breakpoint-down(md) { ... }
+@include media-breakpoint-down(lg) { ... }
+breakpoint & down values:
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) { ... }
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+breakpoint only:
+
+@include media-breakpoint-only(xs) { ... }
+@include media-breakpoint-only(sm) { ... }
+@include media-breakpoint-only(md) { ... }
+@include media-breakpoint-only(lg) { ... }
+@include media-breakpoint-only(xl) { ... }
+breakpoint only values (toggle in between values only):
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) { ... }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+*/
+/*Lafeclidad que se obtiene fácilmente se acaba facilmente*/
+/*https://www.zonarutoppuden.com/2016/07/naruto-shippuden-468.html*/
+/*https://www.zonarutoppuden.com/2015/11/naruto-shippuden-438.html*/
+/*
+
+
+Estudiar 30 minutos o una hora después de hacer ejercicios
+https://www.w3schools.com/jquery/exercise_jq.asp?filename=exercise_jq_selectors6
+daniela.campos.aguirre7@gmail.com
+daniela.campos.aguirre77
+78581996
+
+https://www.youtube.com/watch?v=rqODyzsRqvQ&feature=share&fbclid=IwAR1P2CBmqUArz1nIK2MIn4tmByqw2XkYhf-IKd9lye6kofJMqe6KOKoFLQs
+
+https://www.facebook.com/1763569203912523/videos/2179844779010565/ -llantén
+
+Eric Edmeades-author, emprendedor, aventurero, 
+Negocios, Salud-Bienestar, Relaciones
+
+
+Gigantes de la industria", 
+
+https://www.youtube.com/user/WolfgangKellert?fbclid=IwAR0f0L20DTxBqvoxiAelx8NnZHnRhL03-86wVndKdQqEmEZVbGdYcQGcJyA
+
+https://wikium.net/train
+
+https://soundcloud.com/cut-the-crap-podcast/107-unlimited-memory-with-kevin-horsley
+
+
+7 días cambia de fase la luna
+El 7 es el número, según se ha señalado, de la finalización de un ciclo y su renovación
+La soberbia.
+La avaricia.
+La lujuria.
+La ira.
+La gula.
+La envidia.
+La pereza.
+
+rojo, naranja, amarillo, verde, cian, azul y violeta, los cuales equivalen a los mencionados por el científico Isaac Newton en 1704 (rojo-naranja-amarillo-verde-azul-añil-violeta, ..
+
+
+Kwik: “if an egg is broken by an outside force life ends; but if its broken from an  inside force life begins..” beautifully said!! Love this quote!! Thanks Jim!!
+
+
+Create instant focus on demand
+Los ecuánimes reaccionan ante información real el nurótico al ruido.
+
+    */
+/*
+http://www.eldeber.com.bo/santacruz/Victima-rompe-el-silencio-y-dice-que-fue-violada-por-quienes-creia-sus-amigos-20190130-0001.html?fbclid=IwAR0W9ujiLf9noXjo4fzeezPxofKpx4qN-qa0k7_unl8iOlpFlKHkMyTmOgk
+
+
+1270px
+
+
+órganos vitales 7
+1bazo-reciclaglóbulosrojos, como el hígado
+2estómago-si seextirpaelesófagosecosedirectamenteconelintestino
+    digesiónmecánica,digestiónquímica,absorciónysecreción
+3loso órganosreproductores
+4elcoloon-Las principalesfuncionessonladeextraeraguayprepararlasheces, compactándolas.
+5lavesícula-almacenalabilisquenoseutilizaenladigestion
+            La bilis la produce constantemente el hígado para ayudar a descomponer las grasas, pero cuando no se necesita en la digestión, se almacena en la vesícula.
+Sin embargo, el exceso de colesterol en la bilis puede formar cálculos biliares, capaces de bloquear los diminutos conductos que la transportan
+6elapéndice-Inicialmente se pensó que era un vestigio, ahora se cree que se trata de un “refugio” para las bacterias beneficiosas del intestino, que les permite repoblarlo cuando es necesario.
+7riñones-filtranlasangre
+ La función de los riñones es la de filtrar la sangre para mantener el equilibrio de agua y electrolitos, así como el equilibrio ácido-base. 
+
+SistemaNervioso-seencargadeprocesartodoslosestímulosquerecibimosparagenerarunareacción
+     ÓrganosSensoriales:
+    ejemplo,infoqueescuchamosyvemosvaanuestrucerebroyevnvíalaordenanuestramano
+    respuestamotora
+SN- ÓrganosSensoriales,Víasnerviosas,Centrosdeprocesamiento
+SN Y S endócrino-regulaycoordinaasfuncionesdelorganismovoluntariasono(corazonvisceras)
+ SNC(encéfalo(masa-cerebroycerebelo)-ymedulaespinal),SNPERFIFÉRICO(todoslosnervios(sensoriales,motores[voluntario-somático,involntario-autónomo]))
+flavonoides,
+
+cúrcuma
+diabetes y la canela
+    Enfermedad crónica e irreversible del metabolismo en la que se produce un exceso de glucosa o azúcar en la sangre y en la orina; es debida a una disminución de la secreción de la hormona insulina o a una deficiencia de su acción
+
+     La glucosa en la sangre es la principal fuente de energía y proviene de los alimentos. La insulina, una hormona que produce el páncreas, ayuda a que la glucosa de los alimentos ingrese en las células para usarse como energía. Algunas veces, el cuerpo no produce suficiente o no produce nada de insulina o no la usa adecuadamente y la glucosa se queda en la sangre y no llega a las células.
+
+
+turmeric-cúrcuma
+
+recordarnombre
+1repetirlo
+2asociarimagen
+3anclarloaunregistroconocido-conalguienocnoidooaunapalabrafonéticamenteparecida
+
+
+columnas iguales
+div.padre-display table
+div.hijo-display table-row
+div.hijo.nieto display table-cell, width 50%
+
+
+*/
+
+/*
+
+
+1 Tea alumbra para escribir sintáxis
+2 Ñu empieza a pintar corriendo con sus patas y batiendo con los cuernos de las palabras
+3 Moe llena sus barriles de colores para pintar paredes, letreros,..de fondo
+4 Kio Por ser ágil y tener poder se va por los bordes
+5 Leo se encarga de hacer espacio entre los bordes y el contenido
+6 Oso Baloo por se rel más alto mide con sus manos la altura y anchura y el el modelo de caja a tomar en cuenta, margin, border, padding, content y el outline
+
+7 Fu Hace un ninjutsu para alinearlas, darle color el tipo de letras
+8 Che Se encarga del tipo de letras para los afiches, como en su revolución
+9 Huevo se encarga de los iconos por ser cartoon redonditos y sencillos
+10 Toro Ferdinando con unos sellos marca a quienes estan con referencia, visitados, hover, y activos
+11 Dedo las listas quienes aprueban o no 
+12 Dino se encarga de las tablas de piedra
+13 Tama varios tipos de tamaño y funciones
+14 Taco muy ancho su maxima anchura,
+15 Tele se cambia en diferentes posiciones para ver
+16 Taza, está rebalzando
+17 Toffe el fantasma sólo flota y observa
+18 Techo las tejas estan en líneas y bloques
+19 Toby se encarga de alinear las tejas, display,text-align, margin
+20 Noria hay diferentes formas en la punta de la soga,para descendientes, hijos, hermanod adjacente, hermano general
+21 Nita clases,cuando cambia el estado de un  elemnte, hover, active...first-child
+22 Nina elementos, usada en parte de un elemento::first-letter,before, after
+23 Nemo se mete más al fondo y más opacidad
+24 Navigation bar
+25 Nilo, dropdowns,   menu de despliegue
+26 Nasa, galería de imagenes del universo
+27 Anafe, imagenes en una sola imagen para poner en la pared y saber que cocinar, sprites
+28 Nacho, menciona todos los atributos como el título, target,  clase ...
+29 Napa, se encarga de todos los formularios en el otro mundo
+30 amor, contadores
+31 Moto, especial cabeza, menu de navegación, contenido ,contenido principal, y pie
+32 Mono unidades demedidas para construir su palacio, em, ex,vw,vmin,vmax,%, absolutas cm,px,...
+33 Momia especifiaciones estlos en línea, ids,clases, atributos, pseudoclases y seduelementos
+
+
+
+
+Mira porque me pongo así de no especial
+La mayoría de las mujeres serias, hablando al menos
+de cuando viven juntos,
+no se dejan coquetear, se dan su lugar
+no las malinterpretan. Son de sus maridos aunque el hogar es imperfecto.
+Mira como me he sentido a lo largo de los años
+entre relaciones y malentendidos con:
+
+Raúl,
+Claudio,
+Gilmar,
+Alejandro(del aeropuerto),
+Christian,
+Felix Grimaldos,
+El que vivía al frente de Ana María(mamá de Daniela y Rodrigo),
+Pastor (de la alcaldía),
+Ahora José Luis Ortiz,
+
+Todos ellos entre relaciones o intenciones de relación  y malentendidos
+mientras éramos amigos yluego pareja.
+Así de especial me siento al no darte hasta ahora tu lugar 000(cero)
+
+
+5 Buenas Prácticas de CSS
+Escribe código CSS Reutilizable DRY (Dont Repeat Yourself)
+
+Usar box-sizing: border-box; Sí o Sí
+
+
+html { box-sizing: border-box; }
+
+*,
+*:after,
+*:before { box-sizing: inherit; }
+Fórmula PC-TV en el ordenamiento de los atributos CSS
+
+Posicionamiento: position, z-index, floats, display, etc.
+Caja (Modelo de Caja): width, height, padding, border, margin, etc.
+Texto: font-size, text-align, font-family, text-decoration, etc.
+Varios: backgrounds, border-radius, opacity, etc.
+.container {
+        /*posicionamiento*/
+	
+/*position: fixed;
+	bottom: 50%;
+	right: 0;
+	z-index: 7;
+            //modelo de caja
+	height: 80vw;
+	width: 80%;
+	margin: 1rem;
+        //
+	font-size: 3rem;
+	text-decoration: none;
+        //
+	opacity: .5;
+	background-color: #FFF;
+}
+Maquetar bajo un enfoque Mobile First
+
+Desktop First - Graceful Degration
+Mobile First - Progressive Enhancement
+Aplicar Responsible Design a nuestro Responsive Design
+
+Responsive Design: Buenas Prácticas de CSS
+
+Layout Flexible
+Multimedia Flexible
+Uso de mediaqueries
+Responible Responsive Design: Buenas Prácticas de CSS + (JS o ServerSide)
+
+Adaptive Design
+RESS
+Responsible Design
+
+**************
+$("p").on({
+  mouseenter: function(){
+    $(this).css("background-color", "lightgray");
+  }, 
+  mouseleave: function(){
+    $(this).css("background-color", "lightblue");
+  }, 
+  click: function(){
+    $(this).css("background-color", "yellow");
+  } 
+});
+
+
+1Cuando creas un branch creas un ambiente
+    Los cambios que haces a tu branch no afectan a tu master
+    Una regla, cualquier cosa que está en el master es siempre deployable
+    Por eso es muy importante crear tu branch a partir del branch
+    Agrega un nombre bien descriptivo
+
+2 Add commits
+    Sea que agregues, edites o elimines estas haciendo un commit.
+    Cada commit tiene asociado un mensaje.Es una unidad separada de cambio.
+
+3 Abrir un Pull Request
+    Inicia la discusión sobre tus commits. 
+    Todos pueden ver exactamente que cambios serían mergeado si aceptan tu solicitud.
+    Puedes pedir retroalimentación de un grupo específico o equipos, si están  a la mano y al otro lado del mundo.
+
+4 Discute y revisa tu código
+    Una vez ha sido abierto el Pull Request.
+    Tal vez el estilo código no coincida las pautas, el cambio esta faltante unittest....
+
+Puedes continuar de meter a tu branch, arreglar algo en tu branch
+
+5 Deploy
+    Deployar desde un branch para el testeo final en producción antes de mergear al master. Si tu branch causa problemas, puedes revertirlo por medio del deploying el master existente en producción.
+
+6 Merge
+    Ya que tienes verificado tus cambios en producción, es hora de mergear tu código en el master.
+stale,
+alluded
+paraded
+warfare,frail
+bondagecon-artis,
+swindler,
+slanders
+snatch
+stench,
+outcast
+
+
+
+Bill Gates
+Life is not fair get, used to it!
+If you are born poor it’s not your mistake, but if you die poor it’s your mistake.
+Life is not fair get, used to it!
+We all need people who will give us feedback. That’s how we improve.
+
+
+
+
+https://www.youtube.com/watch?v=VtudQ4OjwZU&t=11s
+https://www.youtube.com/watch?v=3tCWngax6WE
+https://www.youtube.com/watch?v=u-Ep701QZaM
+
+The Perfect Relationship, For You | Eric Edmeades
+
+
+
+Encuentra tu visión y síguela, para no ir sin dirección y ser infeliz
+        Sonreir, visualizar     
+Nunca pienses en pequeño, si piensas así es por miedo al fracaso
+    fracaso es cuando caes y no te levantas, si caes y te levantas no es fracaso
+Wenn shon, denn shon-si haces algo, hazlo bien
+Ignora a los que no creen de ti
+Trabaja duro, no pain, no gain-si nohaces esto las demás reglas no tendran efecto
+No sólo recibas, da devuelta
+
+Bendigo a Daniela,
+lamadre de mi hija que tanto amo,
+le deseo sonrisas, risas y buenos momentos
+quiero que me entiendo pero no me enfocaré en ello
+deseo bienestar, paz y gozo.
+Me ofendió y ofende, sin embargo me hace mal
+pensar en el ; de tanto bendecirla y orar por 
+ella, el bienestar se allegará a ella y yo
+estaré mejor, porque sin veneno y malas vibras
+ellla no estará ala defensiva.
+Si no grito, no gritará.
+Si no expreso rabia, no rabiará.
+Si soy prudente y oportuno, me evitaré de momentos tensos
+en público y con al menos algo de consideración de parte de ella.
+Si me retiro, pensaremos aunque sea un momento
+de que vamos mal encaminado.
+
+
+Primeramente amo a Daniela y no quiero 
+perderla. Quiero amarla, besarla, abrazarla,
+bendecirla, ayudarla, hacerla sentir especial,
+hacerle el amor siempre. Quiero disfrutarla,
+pasar momentos especiales y memorables.
+Quiero eliminar toda tensión, rabia, frustraciones,
+resentimiento departe mía.
+Si me muestra mala cara, advertirle eso
+si puedo resistir no  mirarla y escucharla;
+caso contrario me retiro de momento.
+Huir en caso de posibles gritos, disimuladamente o no.
+No hacer estando presente ella o no, algo que
+la moleste,como:
+ensuciar algo, cosas fuera de lugar,...
+No criticarla, juzgarla y quejarme de ella
+hablar cumplidos sinceros: ;
+
+
+
+
+
+
+
+
